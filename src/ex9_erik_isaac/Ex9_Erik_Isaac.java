@@ -20,7 +20,7 @@ public class Ex9_Erik_Isaac {
             //User input positive Number.
             number = inputPositiveNumber();
             if(number < 5000) {
-                romanicNumber = conversor.numberToromanic(number);
+                romanicNumber = conversor.numberToRomanic(number);
                 System.out.println("Romanic:" + romanicNumber);
             } else if(number != 5000){
                 System.out.println("Wrong, the number is need to be lower than 5000.");
@@ -46,10 +46,10 @@ public class Ex9_Erik_Isaac {
                 } else {
                     System.out.println("Wrong value, expected positive number.");
                 }
-            } catch (IOException e) {
-                System.out.println("Unexpected error.");
             } catch (NumberFormatException e) {
                 System.out.println("Wrong value, expected a number.");
+            } catch (IOException e) {
+                System.out.println("Unexpected error.");
             }
         } while(!correct);
         return number;

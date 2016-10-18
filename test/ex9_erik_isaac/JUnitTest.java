@@ -33,6 +33,6 @@ public class JUnitTest {
     @Test
     public void test() {
         Conversor conversor = new Conversor();
-        assertEquals(fExpected, conversor.numberToromanic(fInput));
+        assertEquals(fExpected, conversor.numberToRomanic(fInput));
     }
 }
